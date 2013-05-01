@@ -81,8 +81,8 @@ public class MainActivity extends FragmentActivity {
 
 		@Override
 		public int getCount() {
-			// Show 9 total pages.
-			return 9;
+			// Show 4 total pages.
+			return 4;
 		}
 
 		@Override
@@ -97,16 +97,6 @@ public class MainActivity extends FragmentActivity {
 					return getString(R.string.title_section3).toUpperCase(l);
 				case 3:
 					return getString(R.string.title_section4).toUpperCase(l);
-				case 4:
-					return getString(R.string.title_section5).toUpperCase(l);
-				case 5:
-					return getString(R.string.title_section6).toUpperCase(l);
-				case 6:
-					return getString(R.string.title_section7).toUpperCase(l);
-				case 7:
-					return getString(R.string.title_section8).toUpperCase(l);
-				case 8:
-					return getString(R.string.title_section9).toUpperCase(l);
 			}
 			return null;
 		}
@@ -127,14 +117,25 @@ public class MainActivity extends FragmentActivity {
 		}
 
 		@Override
-		public View onCreateView(LayoutInflater inflater, ViewGroup container,
-				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.fragment_main_dummy,
-					container, false);
-			TextView dummyTextView = (TextView) rootView
-					.findViewById(R.id.section_label);
-			dummyTextView.setText(Integer.toString(getArguments().getInt(
-					ARG_SECTION_NUMBER)));
+		public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+			View rootView = inflater.inflate(R.layout.fragment_main_dummy, container, false);
+			TextView dummyTextView = (TextView) rootView.findViewById(R.id.section_label);
+			// Put text in fragment
+			//dummyTextView.setText(Integer.toString(getArguments().getInt(ARG_SECTION_NUMBER)));
+			switch (getArguments().getInt(ARG_SECTION_NUMBER)) {
+				case 1:
+					dummyTextView.setText("This is where a user will be able to set up who they're associated with, similar to a buddy or friend's list.");
+					break;
+				case 2:
+					dummyTextView.setText("This is where all GPS data will be displayed and have the ability to be saved to your account.");
+					break;
+				case 3:
+					dummyTextView.setText("This is where the a user will be able to message other users, privately.");
+					break;
+				case 4:
+					dummyTextView.setText("This is where a user will be able to see all notifications associated with their account or website.");
+					break;
+			}
 			return rootView;
 		}
 	}
