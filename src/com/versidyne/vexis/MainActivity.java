@@ -81,8 +81,8 @@ public class MainActivity extends FragmentActivity {
 
 		@Override
 		public int getCount() {
-			// Show 3 total pages.
-			return 3;
+			// Show 9 total pages.
+			return 9;
 		}
 
 		@Override
