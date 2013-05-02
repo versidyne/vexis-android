@@ -43,11 +43,6 @@ public final class R {
         public static final int title_section2=0x7f050003;
         public static final int title_section3=0x7f050004;
         public static final int title_section4=0x7f050005;
-        public static final int title_section5=0x7f050006;
-        public static final int title_section6=0x7f050007;
-        public static final int title_section7=0x7f050008;
-        public static final int title_section8=0x7f050009;
-        public static final int title_section9=0x7f05000a;
     }
     public static final class style {
         /** 
