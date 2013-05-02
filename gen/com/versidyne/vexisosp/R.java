@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.versidyne.vexis;
+package com.versidyne.vexisosp;
 
 public final class R {
     public static final class attr {

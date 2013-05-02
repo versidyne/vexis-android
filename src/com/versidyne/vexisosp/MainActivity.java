@@ -1,4 +1,4 @@
-package com.versidyne.vexis;
+package com.versidyne.vexisosp;
 
 import java.util.Locale;
 
