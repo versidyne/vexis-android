@@ -1,12 +1,12 @@
 Vexis - Android Client
 =====
 #####Overview
-This is the complete core of Vexis.  This can be utilized to set up nodes, websites, and anything else one's heart can desire.
+This project can be compiled using Eclipse and the lastest SDK (Currently API 17) from the ADT Bundle hosted on Google's website.
 
 #####Main Goals
-* Maintain a solid system of which website development and graphic design can take place.  The issue in this scenario is that the system is meant to be universal, so the intial installation must be very basic but still have all necessary components for expansion within the main administration panel.  This will be an interesting hurdle to jump over, but it will be important in maintain a solid, universal product for many generations to come.
+* Maintain a solid application that will communicate with a user's websites and their associates.
 
-* Maintain several different "gateways" that will provide different types of functionality for various domains, subdomains, and virtual subdirectories.
+* Maintain a particular level of professionalism to ensure this application's usage in the business world.
 
 Installation
 =====
