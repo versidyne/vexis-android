@@ -1,28 +1,26 @@
 Vexis - Android Client
 =====
 #####Overview
-This project can be compiled using Eclipse and the lastest SDK (Currently API 17) from the ADT Bundle hosted on Google's website.
+This is an Android application.
 
 #####Main Goals
 * Maintain a solid application that will communicate with a user's websites and their associates.
 
 * Maintain a particular level of professionalism to ensure this application's usage in the business world.
 
-Installation
+Usage
 =====
 #####Overview
 This is a simple process and will remain as such if instructions are followed carefully.
 
-#####Configuration
-Copy the config.sample.php file and name the copy to config.php for the system to recognize it.  Then, open this file (which is fairly straight forward) and replace the sample data with the data from your server.
+#####Compilation
+This project can be compiled using Eclipse and the lastest SDK (Currently API 17) from the ADT Bundle hosted on Google's website.
 
-#####Database
-Simply import the SQL file from the install folder directly in phpMyAdmin.  This will set up your initial database.  You should then visit the Settings table and change the various settings specifically for your domain and server information to avoid future issues when logging in for the first time.
+#####Exporting & Signing
+This project can only be signed, exported, and uploaded to Google Play by the Versidyne Development team.
 
-Note: This will eventually all be done with an installation file in php, which will make this process much easier.
-
-#####Finalizing
-Since everything should be smoothly configured, delete the install folder.  This will keep your system from having your settings overwritten which is a large security vulnerability.
+#####Installing Unsigned
+This project can be installed, unsigned, by anyone who wishes to modify or compile this code.  The receiving device must have Non-Market apps enabled in their settings in order to do so successfully.
 
 System Roles
 =====
