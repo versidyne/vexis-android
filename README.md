@@ -1,7 +1,7 @@
 Vexis - Android Client
 =====
 #####Overview
-This is an Android application.
+This is Android Client Application is intended to interface with the Vexis network and provide a general basis for collaboration, updates, posts, etc.  Depending on the successfulness of this application, other projects, libraries, apis, games, etc, will spawn from this root project.
 
 #####Main Goals
 * Maintain a solid application that will communicate with a user's websites and their associates.
