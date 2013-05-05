@@ -27,51 +27,58 @@ Since everything should be smoothly configured, delete the install folder.  This
 System Roles
 =====
 #####Overview
-The roles that follow are separated within a directory specific to its name.  Within these directories, each role will have its format and place in the order of the system as it runs.  The role will dictate where a particular feature will need to go and from there we can maintain quite a vast sense of universal ability.
+The roles that follow are separated through various Activities and Fragments.  Each role will have its format and place in the order of the system as it runs.  The role will dictate where a particular feature will need to go and from there we can maintain quite a vast sense of universal ability to expand onto other mobile applications.
 
 #####Extensions
-Extensions will involve a top level action enabled across the board for all pages.
+Extensions will involve a top level action enabled across the board for all Activities and Fragments.
 
 ```java
 //Sample Format
 
-//object oriented class style information here
-echo "Hello World!";
+// Put text in fragment
+switch (getArguments().getInt(ARG_SECTION_NUMBER)) {
+	case 1:
+		dummyTextView.setText("This is where a user will be able to set up who they're associated with, similar to a buddy or friend's list.");
+		break;
+	case 2:
+		dummyTextView.setText("This is where all GPS data will be displayed and have the ability to be saved to your account.");
+		break;
+	case 3:
+		dummyTextView.setText("This is where the a user will be able to message other users, privately.");
+		break;
+	case 4:
+		dummyTextView.setText("This is where a user will be able to see all notifications associated with their account or website.");
+		break;
+}
 ```
-
-#####Gateways
-Only one gateway can run and is set by the children block in the database.
-
-* ACP - Admin Control Panel*
-* API - Application Programming Interface
-* CMS - Content Management System
-* CDN - Content Delivery Network
-
-*This needs to be able to be accessed regardless of the ability of the website to run, after changes have been made.  This should also include some sort of hardcoded recovery admin to help through that process in the case that major issues arise.
-
-#####Includes
-These are files that contain the initial hooks, like configuration and globals.
 
 #####Libraries
 These are files that are available throughout the system at any time.  They work in an object oriented method and contribute in common and general ways (i.e. database interfacing, markup languages, etc).  These files are extremely flexible and should be edited on a common basis.
 
 Note: The loading of these files is going to be more nested in the coming versions.  We will be loading data in namespaces, and this will go into various types of a hierarchy, similar to that of the widely known SplClassLoader.php file.
 
-#####Modules
-These are files that are only executed by a particular gateway and are held in a folder specific to that gateway.  These files are specific to a particular page that calls them, can only run once, can only have one injection and do not run across the entire system.  These are meant for extremely specific tweaks.
-
 #####Plugins
-Plugins will involve a bottom level action enabled particularly within pages that call for them, which can involve multiple injections.
+Plugins will involve a bottom level action enabled particularly within Activities or Fragments that call for them, which can involve multiple injections.
 
 ```java
 //Sample Format
 
-//object oriented class style information here
-echo "Hello World!";
+// Put text in fragment
+switch (getArguments().getInt(ARG_SECTION_NUMBER)) {
+	case 1:
+		dummyTextView.setText("This is where a user will be able to set up who they're associated with, similar to a buddy or friend's list.");
+		break;
+	case 2:
+		dummyTextView.setText("This is where all GPS data will be displayed and have the ability to be saved to your account.");
+		break;
+	case 3:
+		dummyTextView.setText("This is where the a user will be able to message other users, privately.");
+		break;
+	case 4:
+		dummyTextView.setText("This is where a user will be able to see all notifications associated with their account or website.");
+		break;
+}
 ```
-
-#####Index.php
-This file is meant to be the "traffic cop" of the system.  It is the only file that is ever truly executed and it builds all data in a particular order.  It is very flexible and should be edited on a rare basis.
 
 Credits
 =====
