@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.versidyne.vexis"
     android:versionCode="9"
@@ -6,34 +7,36 @@
     <uses-sdk
         android:minSdkVersion="11"
         android:targetSdkVersion="17" />
-    
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="com.android.vending.BILLING" />
-    
+
     <application
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme" >
         <activity
-            android:name=".ItemListActivity"
+            android:name="com.versidyne.vexis.ItemListActivity"
             android:label="@string/title_item_list" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".ItemDetailActivity"
+            android:name="com.versidyne.vexis.ItemDetailActivity"
             android:label="@string/title_item_detail" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ItemListActivity" />
         </activity>
-        <!--<service
+        <!--
+        <service
             android:name=".MessageService"
             android:icon="@drawable/ic_launcher"
             android:label="@string/app_name" >
@@ -44,6 +47,25 @@
             </intent-filter>
         </receiver>
         <receiver android:name="StartReceiver" >
-        </receiver>-->
+        </receiver>
+        -->
+        <activity
+            android:name="com.versidyne.vexis.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name="com.versidyne.vexis.SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+
+        <receiver
+            android:name="com.versidyne.vexis.MyReceiver"
+            android:enabled="true"
+            android:exported="true" >
+        </receiver>
     </application>
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
 </manifest>
