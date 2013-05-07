@@ -31,12 +31,12 @@ public class ContentMap {
     
     static {
         //addItem(new DummyItem("1", "Account", "This is where a user will be able to edit their account."));
-        addItem(new DummyItem("2", "Associates", "This is where a user will be able to set up who they're associated with."));
+        addItem(new DummyItem("2", "Associates", "This is where a user will be able to set up who they're associated with, similar to a buddy or friend's list."));
         addItem(new DummyItem("3", "Device", "This is where a user will be able to associate their MEID & SIM with their account."));
         //addItem(new DummyItem("4", "Email", "This is where a user will be able to set up email accounts."));
-        addItem(new DummyItem("5", "Location", "This is where all GPS data will be displayed."));
-        addItem(new DummyItem("6", "Messaging", "This is where the a user will be able to message other users."));
-        //addItem(new DummyItem("7", "Notifications", "This is where a user will be able to set their notification preferences."));
+        addItem(new DummyItem("5", "Location", "This is where all GPS data will be displayed and have the ability to be saved to your account.b"));
+        addItem(new DummyItem("6", "Messages", "This is where the a user will be able to message other users, privately."));
+        addItem(new DummyItem("7", "Notifications", "This is where a user will be able to see all notifications associated with their account or website.  High priority notifications will also be displayed in the users notifications menu bar."));
         //addItem(new DummyItem("8", "Profile", "This is where all profile and account information will be edited."));
         //addItem(new DummyItem("9", "Wifi Hotspot", "This is where a user will be able to turn their phone into a mobile Wifi hotspot."));
     }
